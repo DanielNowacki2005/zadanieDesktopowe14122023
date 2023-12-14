@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zadaniedesktopowe14122023.Scene2">
+   <children>
+      <GridPane layoutX="44.0" layoutY="29.0" prefHeight="344.0" prefWidth="525.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="nazwa uzytkownika" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </Label>
+            <Label text="email" GridPane.columnIndex="1">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </Label>
+            <Label text="hasło" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </Label>
+            <Label text="pin" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#switchToScene3" prefHeight="68.0" prefWidth="175.0" text="Zaloguj się" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="switchToHelloController" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="68.0" prefWidth="142.0" text="nie mam konta" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <PasswordField GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="2" />
+            <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
